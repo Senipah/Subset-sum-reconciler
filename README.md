@@ -1,4 +1,4 @@
-# Subuset Sum Reconciler
+# Subset Sum Reconciler
 
 ## Introduction
 

@@ -119,7 +119,7 @@ Attribute WritePaths.VB_Description = "Outputs the results to a new workbook"
     
     FileName = "Elements that sum to " & CStr(Target) & " - " & Format$(Now, "yyyy-mm-dd hh-mm-ss")
     Set DestFile = Workbooks.Add
-    DestFile.SaveAs Environ$("temp") & "\" & FileName
+    DestFile.SaveAs Environ$("temp") & Application.PathSeparator & FileName
     Set DestSheet = DestFile.Sheets.[_Default](1)
     DestSheet.Name = "Output"
     Paths.ToExcelRange DestSheet.Range("A1")
